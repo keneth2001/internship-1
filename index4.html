@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS File</title>
+    <style>
+        #h1{
+            color: rgb(47, 20, 197);
+            font-size: 30;
+            border-left: 5px solid red;
+
+            padding-left: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Welcome to Stratcom</h1>
+
+
+    <p id="count"></p>
+
+
+
+    <button onclick="handleClick()">change h1 style</button>
+
+
+    <form action="" id="loginForm">
+        <div>
+            <label for="name">UserName:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="email" id="pword" name="pword" required>
+        </div>
+        
+        <button>login</button>
+    </form>
+    <script>
+
+        /* const h1 =document.getElementById("h1")
+
+        setTimeout(() =>{
+            h1.textContent="i have been modified!"
+        }, 3000)
+        <!-- let initCount = 0;
+        
+        const count = document.getElementById("count")
+
+        setInterval(() =>{
+            count.textContent = initCount
+            initCount += 1
+
+
+        },1000) 
+
+// JAVASCRIPT POP UP BOXES,, ALERT,,, CONFIRMM,, PROMPT
+
+        alert("i have been invoked")
+
+        const response =confirm("delete message")
+        if (response){
+
+
+            alert("user acccepted deletion")
+        }else{
+            alert("user declined deletion")
+        }
+        const answer = prompt("How old are you","")
+        document.writeln(answer)
+        
+
+        const handleClick =() => {
+            h1.style.color="red"
+            //h1.classList.add("h1")
+           h1.classList.toggle("h1")
+
+        } */
+        const form = document.getElementById("logiForm")
+        
+        form.addEventListener("submit",(e) =>{
+            e.preventDefault()
+            const formData = new formData(form)
+            const username = formData.get("UserName")
+            const pword = formData.get("pword")
+            alert(`UserName = ${username} & pword = ${pword}`)
+        }) 
+
+        const fruits =['oranges', 'apples', 'avacado']
+        const ul = document.createElement('ul')
+
+        do{
+            const li = document.createElement('li')
+            li.textContent = fruits[i]
+            ul.appendChild(li)
+            i += 1
+        }while(i< fruits.length -1)
+        const dcontent = document.getElementById('dContent')
+        dcontent.appendChild(ul)
+    </script>
+</body>
+</html>

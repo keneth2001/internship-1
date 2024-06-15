@@ -1,0 +1,116 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+}
+
+header {
+    background-color:rgb(69, 69, 158);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background:#efefef;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.registration h2{
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(69, 69, 158);
+}
+
+.video-container {
+    position: relative;
+}
+
+.video-container video {
+    width:100%;
+    height: 500px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+}
+
+.audio audio {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color:powderblue;
+}
+
+fieldset{
+    background: rgb(125, 197, 241);
+    
+}
